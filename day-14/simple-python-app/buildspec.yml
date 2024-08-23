@@ -28,4 +28,8 @@ artifacts:
   files:
     - '**/*'
   base-directory: 'day-14/sample-python-app/'
+  s3:
+    bucket: sample-python-app-2308  # Replace with your actual S3 bucket name
+    path: artifacts/${CODEBUILD_BUILD_ID}  # Optional: specify the S3 path for the artifacts
+    packaging: ZIP  # Package the artifacts into a ZIP file
 
